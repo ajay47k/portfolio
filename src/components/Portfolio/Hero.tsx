@@ -1,11 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Mail, Phone, Linkedin, Github, MapPin, Download } from "lucide-react";
+
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center space-y-8">
+        {/* Profile Image */}
+        <div className="flex justify-center">
+          <Avatar className="w-32 h-32 md:w-40 md:h-40 ring-4 ring-primary/20">
+            <AvatarImage src="/lovable-uploads/348bbb99-51bc-4396-a6ad-a0715431024a.png" alt="Ajay Sengar" />
+            <AvatarFallback>AS</AvatarFallback>
+          </Avatar>
+        </div>
+        
         {/* Hero Badge */}
         <Badge variant="secondary" className="px-4 py-2 text-sm">
           Software Engineer
