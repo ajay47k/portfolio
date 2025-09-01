@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Mail, Phone, Linkedin, Github, MapPin, Download } from "lucide-react";
 
 
@@ -10,10 +9,13 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Profile Image */}
         <div className="flex justify-center">
-          <Avatar className="w-64 h-64 md:w-72 md:h-72 ring-4 ring-primary/20">
-            <AvatarImage src="/lovable-uploads/348bbb99-51bc-4396-a6ad-a0715431024a.png" alt="Ajay Sengar" />
-            <AvatarFallback>AS</AvatarFallback>
-          </Avatar>
+          <div className="w-48 h-64 md:w-96 md:h-128 lg:w-[384px] lg:h-[512px] xl:w-[480px] xl:h-[640px] 2xl:w-[576px] 2xl:h-[768px] rounded-2xl overflow-hidden ring-4 ring-primary/20 shadow-2xl">
+            <img 
+              src="/lovable-uploads/348bbb99-51bc-4396-a6ad-a0715431024a.png" 
+              alt="Ajay Sengar" 
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
         
         {/* Hero Badge */}
