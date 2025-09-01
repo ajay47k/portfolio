@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-8">
         {/* Profile Image */}
         <div className="flex justify-center">
-          <div className="w-48 h-64 md:w-96 md:h-128 lg:w-[384px] lg:h-[512px] xl:w-[480px] xl:h-[640px] 2xl:w-[576px] 2xl:h-[768px] rounded-2xl overflow-hidden ring-4 ring-primary/20 shadow-2xl">
+          <div className="w-48 h-64 md:w-96 md:h-128 lg:w-48 lg:h-64 xl:w-60 xl:h-80 2xl:w-72 2xl:h-96 rounded-2xl overflow-hidden ring-4 ring-primary/20 shadow-2xl">
             <img 
               src="/lovable-uploads/348bbb99-51bc-4396-a6ad-a0715431024a.png" 
               alt="Ajay Sengar" 
