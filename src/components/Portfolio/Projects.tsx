@@ -20,18 +20,20 @@ const projects = [
   },
   {
     title: "Neon Notes",
-    description: "A modern note-taking web application built with Next.js, Supabase, and Firebase, designed for secure, fast, and collaborative note management with PDF and image upload support.",
-    technologies: ["Next.js", "TypeScript", "Supabase", "Firebase", "Auth"],
+    description: "An advanced note-taking web application with Obsidian-style linking and graph visualization, featuring voice-to-text capabilities, Google OAuth authentication, and collaborative note management with rich media support.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Firebase", "Google OAuth", "Voice Recognition"],
     github: "https://github.com/ajay47k/neon-notes",
     features: [
-      "User authentication with Supabase Auth",
-      "Notes and topics management",
-      "PDF and image uploads",
-      "Profile management",
-      "Responsive UI with modern components",
-      "Secure environment variables management"
+      "Obsidian-style bidirectional note linking",
+      "Interactive graph view for note relationships",
+      "Voice-to-text note creation and editing",
+      "Google OAuth authentication",
+      "PDF and image uploads with preview",
+      "Real-time collaborative editing",
+      "Advanced search and filtering",
+      "Responsive modern UI with dark/light themes"
     ],
-    highlights: ["Modern UI", "File Upload", "Secure Authentication"]
+    highlights: ["Graph Visualization", "Voice Input", "OAuth Integration"]
   }
 ];
 
