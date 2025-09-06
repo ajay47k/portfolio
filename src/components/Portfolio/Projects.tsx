@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Video, Users, MessageSquare, Share2 } from "lucide-react";
+import { ExternalLink, Github, Video, Users, MessageSquare, Share2, StickyNote } from "lucide-react";
 
 const projects = [
   {
@@ -17,6 +17,21 @@ const projects = [
       "Session recording and querying"
     ],
     highlights: ["LLM Integration", "Real-time Communication", "Secure Platform"]
+  },
+  {
+    title: "Neon Notes",
+    description: "A modern note-taking web application built with Next.js, Supabase, and Firebase, designed for secure, fast, and collaborative note management with PDF and image upload support.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Firebase", "Auth"],
+    github: "https://github.com/ajay47k/neon-notes",
+    features: [
+      "User authentication with Supabase Auth",
+      "Notes and topics management",
+      "PDF and image uploads",
+      "Profile management",
+      "Responsive UI with modern components",
+      "Secure environment variables management"
+    ],
+    highlights: ["Modern UI", "File Upload", "Secure Authentication"]
   }
 ];
 
@@ -40,7 +55,11 @@ const Projects = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-lg bg-primary/10">
-                      <Video className="w-5 h-5 text-primary" />
+                      {project.title === "Neon Notes" ? (
+                        <StickyNote className="w-5 h-5 text-primary" />
+                      ) : (
+                        <Video className="w-5 h-5 text-primary" />
+                      )}
                     </div>
                     <div>
                       <CardTitle className="text-xl font-semibold">
