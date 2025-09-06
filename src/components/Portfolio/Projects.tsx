@@ -5,6 +5,20 @@ import { ExternalLink, Github, Video, Users, MessageSquare, Share2, Leaf } from 
 
 const projects = [
   {
+    title: "ZoomGpt",
+    description: "A secure video conferencing platform with real-time chat, screen sharing, and an intuitive ReactJS UI, augmented with LLM-powered modules for meeting summarization and querying of recorded sessions.",
+    technologies: ["Prisma", "OpenAI", "NextJS", "Express", "React", "Node"],
+    github: "https://github.com/ajay47k/ZoomGpt.git",
+    features: [
+      "Real-time video conferencing",
+      "Screen sharing capabilities", 
+      "AI-powered meeting summarization",
+      "Chat functionality",
+      "Session recording and querying"
+    ],
+    highlights: ["LLM Integration", "Real-time Communication", "Secure Platform"]
+  },
+  {
     title: "EcoPulse",
     description: "A comprehensive real-time carbon footprint tracking application that helps users monitor, analyze, and reduce their environmental impact through data visualization, AI recommendations, and gamification.",
     technologies: ["Next.js 14", "React 19", "TypeScript", "PostgreSQL", "Tailwind CSS", "Grok AI"],
@@ -18,20 +32,6 @@ const projects = [
       "Profile management and progress tracking"
     ],
     highlights: ["AI Integration", "Environmental Impact", "Data Visualization"]
-  },
-  {
-    title: "ZoomGpt",
-    description: "A secure video conferencing platform with real-time chat, screen sharing, and an intuitive ReactJS UI, augmented with LLM-powered modules for meeting summarization and querying of recorded sessions.",
-    technologies: ["Prisma", "OpenAI", "NextJS", "Express", "React", "Node"],
-    github: "https://github.com/ajay47k/ZoomGpt.git",
-    features: [
-      "Real-time video conferencing",
-      "Screen sharing capabilities", 
-      "AI-powered meeting summarization",
-      "Chat functionality",
-      "Session recording and querying"
-    ],
-    highlights: ["LLM Integration", "Real-time Communication", "Secure Platform"]
   }
 ];
 
