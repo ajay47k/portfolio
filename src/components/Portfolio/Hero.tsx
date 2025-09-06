@@ -4,6 +4,15 @@ import { Mail, Phone, Linkedin, Github, MapPin, Download } from "lucide-react";
 
 
 const Hero = () => {
+  const handleDownloadResume = () => {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/resume.pdf'; // You'll need to add this file to the public folder
+    link.download = 'Ajay_Sengar_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-4xl mx-auto text-center space-y-8">
@@ -57,7 +66,7 @@ const Hero = () => {
             Get In Touch
           </Button>
           
-          <Button variant="outline" size="lg">
+          <Button variant="outline" size="lg" onClick={handleDownloadResume}>
             <Download className="w-4 h-4 mr-2" />
             Download Resume
           </Button>
