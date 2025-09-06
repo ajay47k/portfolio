@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Video, Users, MessageSquare, Share2, Leaf } from "lucide-react";
+import { ExternalLink, Github, Video, Users, MessageSquare, Share2 } from "lucide-react";
 
 const projects = [
   {
@@ -17,21 +17,6 @@ const projects = [
       "Session recording and querying"
     ],
     highlights: ["LLM Integration", "Real-time Communication", "Secure Platform"]
-  },
-  {
-    title: "EcoPulse",
-    description: "A comprehensive real-time carbon footprint tracking application that helps users monitor, analyze, and reduce their environmental impact through data visualization, AI recommendations, and gamification.",
-    technologies: ["Next.js 14", "React 19", "TypeScript", "PostgreSQL", "Tailwind CSS", "Grok AI"],
-    github: "https://github.com/ajay47k/ecopulse",
-    features: [
-      "Real-time carbon tracking",
-      "Interactive dashboard with charts",
-      "AI-powered personalized recommendations",
-      "Gamification with leaderboards",
-      "API integrations (Google Maps, Uber)",
-      "Profile management and progress tracking"
-    ],
-    highlights: ["AI Integration", "Environmental Impact", "Data Visualization"]
   }
 ];
 
@@ -55,11 +40,7 @@ const Projects = () => {
                 <div className="flex items-start justify-between">
                   <div className="flex items-center gap-3">
                     <div className="p-2 rounded-lg bg-primary/10">
-                      {project.title === "EcoPulse" ? (
-                        <Leaf className="w-5 h-5 text-primary" />
-                      ) : (
-                        <Video className="w-5 h-5 text-primary" />
-                      )}
+                      <Video className="w-5 h-5 text-primary" />
                     </div>
                     <div>
                       <CardTitle className="text-xl font-semibold">
