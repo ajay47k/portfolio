@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Video, Users, MessageSquare, Share2, StickyNote, Wand2 } from "lucide-react";
+import { ExternalLink, Github, Video, Users, MessageSquare, Share2, StickyNote, Wand2, Code } from "lucide-react";
 
 const projects = [
   {
@@ -17,6 +17,23 @@ const projects = [
       "Session recording and querying"
     ],
     highlights: ["LLM Integration", "Real-time Communication", "Secure Platform"]
+  },
+  {
+    title: "Codekricks",
+    description: "A modern, shareable code editor and snippet hub with real-time collaboration. Write in 10+ languages, run code in the browser, share snippets with comments, and upgrade to Pro for more features.",
+    technologies: ["Next.js 15", "TypeScript", "Monaco Editor", "Convex", "Clerk", "Framer Motion", "Lemon Squeezy"],
+    github: "https://github.com/ajay47k/codekricks.git",
+    features: [
+      "Monaco editor with 5 editor themes",
+      "10 programming languages via Piston API",
+      "Real-time collaborative editing",
+      "Shareable code snippets with comments",
+      "User authentication with Clerk",
+      "Free & Pro subscription plans",
+      "Light/Dark theme support",
+      "Code execution in browser"
+    ],
+    highlights: ["Multi-language Support", "Real-time Collaboration", "Pro Features"]
   },
   {
     title: "Neon Notes",
@@ -78,6 +95,8 @@ const Projects = () => {
                         <StickyNote className="w-5 h-5 text-primary" />
                       ) : project.title === "Pixman AI" ? (
                         <Wand2 className="w-5 h-5 text-primary" />
+                      ) : project.title === "Codekricks" ? (
+                        <Code className="w-5 h-5 text-primary" />
                       ) : (
                         <Video className="w-5 h-5 text-primary" />
                       )}
