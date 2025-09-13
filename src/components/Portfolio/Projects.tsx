@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github, Video, Users, MessageSquare, Share2, StickyNote } from "lucide-react";
+import { ExternalLink, Github, Video, Users, MessageSquare, Share2, StickyNote, Wand2 } from "lucide-react";
 
 const projects = [
   {
@@ -34,6 +34,23 @@ const projects = [
       "Responsive modern UI with dark/light themes"
     ],
     highlights: ["Graph Visualization", "Voice Input", "OAuth Integration"]
+  },
+  {
+    title: "Pixman AI",
+    description: "A modern AI-powered image editing platform built with Next.js, Tailwind CSS, and Framer Motion, featuring ImageKit integration for advanced image processing and manipulation capabilities.",
+    technologies: ["Next.js", "ImageKit", "Google OAuth", "Stripe", "Prisma", "MongoDB", "Framer Motion"],
+    github: "https://github.com/ajay47k/glowing-garbanzo-AI-Image_editor",
+    features: [
+      "AI-powered image editing with ImageKit",
+      "User authentication with Google OAuth",
+      "Usage tracking and limits for free users",
+      "Pro subscription with unlimited uploads",
+      "Real-time image processing",
+      "Responsive design with modern UI",
+      "Stripe payment integration",
+      "MongoDB database with Prisma ORM"
+    ],
+    highlights: ["AI Image Processing", "Subscription Model", "Real-time Editing"]
   }
 ];
 
@@ -59,6 +76,8 @@ const Projects = () => {
                     <div className="p-2 rounded-lg bg-primary/10">
                       {project.title === "Neon Notes" ? (
                         <StickyNote className="w-5 h-5 text-primary" />
+                      ) : project.title === "Pixman AI" ? (
+                        <Wand2 className="w-5 h-5 text-primary" />
                       ) : (
                         <Video className="w-5 h-5 text-primary" />
                       )}
